@@ -17,9 +17,104 @@
         },
         "rules": [
           {
+            "description": "Open Iterm",
             "manipulators": [
               {
-                "description": "Change caps_lock to fn",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_option", "left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'iTerm.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Chrome ",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_option", "left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Google Chrome.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Global Protect",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "g",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_option", "left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'GlobalProtect.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Remote Desktop",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_option", "left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Microsoft Remote Desktop.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Code",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_option", "left_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Visual Studio Code.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change caps_lock to fn",
+            "manipulators": [
+              {
                 "from": {
                   "key_code": "caps_lock",
                   "modifiers": {
@@ -36,9 +131,9 @@
             ]
           },
           {
+            "description": "Change alt to left_comman",
             "manipulators": [
               {
-                "description": "Change alt to left_comman",
                 "from": {
                   "key_code": "left_option",
                   "modifiers": {
@@ -55,9 +150,9 @@
             ]
           },
           {
+            "description": "Change left_command to left_option",
             "manipulators": [
               {
-                "description": "Change left_command to left_option",
                 "from": {
                   "key_code": "left_command",
                   "modifiers": {
@@ -74,9 +169,9 @@
             ]
           },
           {
+            "description": "Fn + H/J/K/L to Arrow Keys",
             "manipulators": [
               {
-                "description": "Fn + H/J/K/L to Arrow Keys",
                 "from": {
                   "key_code": "k",
                   "modifiers": {
